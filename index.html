@@ -13,9 +13,19 @@
         <h1>Library of Congress Search Engine</h1>
         <form>
             <input id="search" type="text">
-            <input id="format" type="dropdown">
+            <input id="format" list="list">
+            <datalist id="list">
+                <option value="maps">
+                <option value="audio">
+                <option value="photos">
+                <option value="manuscripts">
+                <option value="newspapers">
+                <option value="film-and-videos">
+                <option value="notated-music">
+                <option value="websites">
+            </datalist>  
             <button id="search-btn" type="button">Search</button>
-            <button id="go-back-btn" type="button"></button>
+            <button id="go-back-btn" type="button">Go Back</button>
         </form>
     </div>
     <div id="results"></div>
