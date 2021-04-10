@@ -10,25 +10,55 @@
   </head>
   <body>
     <div>
-        <h1>Library of Congress Search Engine</h1>
-        <form>
-            <input id="search" type="text">
-            <input id="format" list="list">
-            <datalist id="list">
-                <option value="maps">
-                <option value="audio">
-                <option value="photos">
-                <option value="manuscripts">
-                <option value="newspapers">
-                <option value="film-and-videos">
-                <option value="notated-music">
-                <option value="websites">
-            </datalist>  
-            <button id="search-btn" type="button">Search</button>
-            <button id="go-back-btn" type="button">Go Back</button>
-        </form>
+      <h1>Library of Congress Search Engine</h1>
+
+      <!-- all items within form seperated by <div> to be on seperate lines -->
+      <form>
+        <!-- search input -->
+        <div>
+          <input id="search" type="text">
+        </div>
+
+        <!-- format drop-down -->
+        <div>
+          <input id="format" list="list">
+          <datalist id="list">
+            <option value="maps">
+            <option value="audio">
+            <option value="photos">
+            <option value="manuscripts">
+            <option value="newspapers">
+            <option value="film-and-videos">
+            <option value="notated-music">
+            <option value="websites">
+          </datalist>
+        </div>
+        
+        <!-- submit button -->
+        <div>
+          <button id="search-btn" type="button">Search</button>
+        </div>
+
+        <!-- go back button -->
+        <div>
+          <button id="go-back-btn" type="button">Go Back</button>
+        </div>
+
+      </form>
     </div>
-    <div id="results"></div>
+
+    <!-- container for results -->
+    <div id="results">
+      <h1 id="resultTitle">Showing Results for SAMPLE </h1>
+      <div id="resultContainer">
+        <p id="resultOne">
+          <h1 id="title">World War Veteran</h1>
+          <p id="date">Date</p>
+          <p id="subject">Subject</p>
+          <p id="description">Description</p>
+        </p>
+      </div>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
